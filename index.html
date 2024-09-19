@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,6 +23,76 @@
     <h2>Copy Text to Clipboard</h2>
     <textarea id="myTextBox" rows="4" cols="50">Enter your text here...</textarea><br><br>
     <button onclick="copyToClipboard()">Copy</button>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaTeX in HTML with MathJax</title>
+
+    <!-- Include MathJax library -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+<body>
+
+    <h1>LaTeX Examples with MathJax</h1>
+
+    <h2>Inline Math</h2>
+    <p>
+        This is an inline LaTeX equation: \( E = mc^2 \). It shows how energy is related to mass and the speed of light.
+    </p>
+
+    <h2>Block Math</h2>
+    <p>
+        The quadratic formula:
+    </p>
+    <p>
+        $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+    </p>
+
+    <h2>Fractions and Square Roots</h2>
+    <p>
+        Here is an example of a fraction and a square root:
+    </p>
+    <p>
+        $$\frac{1}{\sqrt{2}}$$
+    </p>
+
+    <h2>Summations and Integrals</h2>
+    <p>
+        A summation:
+    </p>
+    <p>
+        $$\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$$
+    </p>
+
+    <p>
+        An integral:
+    </p>
+    <p>
+        $$\int_0^\infty e^{-x^2} \, dx = \frac{\sqrt{\pi}}{2}$$
+    </p>
+
+    <h2>Matrix Example</h2>
+    <p>
+        Here's an example of a 2x2 matrix:
+    </p>
+    <p>
+        $$\begin{pmatrix} a & b \\ c & d \end{pmatrix}$$
+    </p>
+
+    <h2>More Complex Equation</h2>
+    <p>
+        Here's a more complex example that combines several LaTeX elements:
+    </p>
+    <p>
+        $$ \int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi} $$
+    </p>
 
 </body>
 </html>
