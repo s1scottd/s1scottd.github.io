@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy to Clipboard</title>
+    <script>
+        function copyToClipboard() {
+            var textBox = document.getElementById("myTextBox");
+            textBox.select();  // Select the text
+            textBox.setSelectionRange(0, 99999);  // For mobile devices
+
+            // Copy the text inside the text box to the clipboard
+            navigator.clipboard.writeText(textBox.value);
+
+            // Optional: provide feedback to the user
+            alert("Text copied to clipboard!");
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Copy Text to Clipboard</h2>
+    <textarea id="myTextBox" rows="4" cols="50">Enter your text here...</textarea><br><br>
+    <button onclick="copyToClipboard()">Copy</button>
+
+</body>
+</html>
